@@ -1,9 +1,8 @@
 ---
 marp: true
-theme: uncover
+theme: default
 footer: '@Chris_L_Ayers - https://chrislayers.com'
----
-<style>
+style: |
   .columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -21,29 +20,29 @@ footer: '@Chris_L_Ayers - https://chrislayers.com'
   .fa-warning {
     color: orange
   }
-  @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
-</style>
 
+  @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'
+
+---
+<!-- _footer: 'https://github.com/codebytes/dev-containers' -->
+
+![bg right](img/containers.jpg)
 # Dev Containers
 
 A VS Code superpower
 
-
 ---
-![bg left:40%](./img/portrait.jpg)
 
-### Chris Ayers
-##### Senior Customer Engineer Microsoft
-<style scoped>
-ul li {
-  font-size: .80em
-}
-</style>
+![bg left:40%](./img/portrait.png)
 
-- Twitter: @Chris\_L\_Ayers
-- LinkedIn: [chris\-l\-ayers](https://linkedin.com/in/chris-l-ayers/)
-- Blog: [https://chrislayers\.com/](https://chrislayers.com/)
-- GitHub: [Codebytes](https://github\.com/codebytes)
+## Chris Ayers
+### Senior Customer Engineer<br>Microsoft
+
+<i class="fa-brands fa-twitter"></i> Twitter: @Chris\_L\_Ayers
+<i class="fa-brands fa-mastodon"></i> Mastodon: @Chrisayers@hachyderm.io
+<i class="fa-brands fa-linkedin"></i> LinkedIn: - [chris\-l\-ayers](https://linkedin.com/in/chris-l-ayers/)
+<i class="fa fa-window-maximize"></i> Blog: [https://chris-ayers\.com/](https://chris-ayers.com/)
+<i class="fa-brands fa-github"></i> GitHub: [Codebytes](https://github.com/codebytes)
 
 ---
 
@@ -158,3 +157,32 @@ img {
 ---
 
 ![bg](img/questions.jpg)
+
+
+---
+
+# Resources 
+
+
+<div class="columns">
+<div>
+
+## Links
+
+- [https://docs.microsoft.com/en-us/events/learntv/learnlive-iac-and-bicep/](https://docs.microsoft.com/en-us/events/learntv/learnlive-iac-and-bicep/)
+- [https://github.com/codebytes](https://github.com/codebytes)
+
+</div>
+<div>
+
+## Chris Ayers 
+
+<i class="fa-brands fa-twitter"></i> Twitter: @Chris\_L\_Ayers
+<i class="fa-brands fa-mastodon"></i> Mastodon: @Chrisayers@hachyderm.io
+<i class="fa-brands fa-linkedin"></i> LinkedIn: - [chris\-l\-ayers](https://linkedin.com/in/chris-l-ayers/)
+<i class="fa fa-window-maximize"></i> Blog: [https://chris-ayers\.com/](https://chris-ayers.com/)
+<i class="fa-brands fa-github"></i> GitHub: [Codebytes](https://github.com/codebytes)
+
+</div>
+
+</div>

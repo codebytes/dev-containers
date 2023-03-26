@@ -26,3 +26,13 @@ This is the repo for the Dev Containers talk by Chris Ayers.
 - https://github.com/microsoft/vscode-remote-try-python
 - https://github.com/microsoft/vscode-remote-try-java
 - https://github.com/microsoft/vscode-remote-try-ruby
+
+### MCR
+
+- https://github.com/microsoft/ContainerRegistry
+- https://mcr.microsoft.com/v2/_catalog
+- https://mcr.microsoft.com/v2/vscode/devcontainers/dotnetcore/tags/list
+- https://mcr.microsoft.com/v2/vscode/devcontainers/dotnet/tags/list
+
+
+https://github.com/devcontainers/features/tree/main/src
