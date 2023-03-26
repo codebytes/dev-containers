@@ -55,9 +55,6 @@ A VS Code superpower
 - How to build a Dev Containers?
   
 ---
-<style scoped>
-li { font-size: 38px; }
-</style>
 
 # Prerequisites
 
@@ -89,21 +86,10 @@ li { font-size: 38px; }
 
 ---
 
-<style scoped>
-li {  
-  list-style-type: none; 
-  font-size: 36px;   
-}
-.columns {
-  grid-template-columns: fit-content(40%),fit-content(60%)
-}
-</style>
-
-
 <div class="columns">
 <div>
 
-# Why use<br>Dev Containers?
+# Why use Dev Containers?
 
 </div>
 <div>
@@ -119,7 +105,6 @@ li {
 
 ---
 
-
 # How do you build a Dev Container?
 
 From the Command Pallet
@@ -128,22 +113,11 @@ From the Command Pallet
 
 ---
 
-<style scoped>
-img {
-  width: 60%
-}
-</style>
 # Which Dev Container do I Pick?
 
- ![Add Options](./img/dev-container-choices.png)
+![Add Options](./img/dev-container-choices.png)
 
 ---
-
-<style scoped>
-img {
-  width: 100%
-}
-</style>
 
 # How Do I Configure it?
 
@@ -162,7 +136,6 @@ img {
 ---
 
 # Resources 
-
 
 <div class="columns">
 <div>
