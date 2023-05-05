@@ -11,6 +11,10 @@ style: |
   .vert {
     vertical-align: middle
   }
+  .fa-twitter { color: aqua; }
+  .fa-mastodon { color: purple; }
+  .fa-linkedin { color: blue; }
+  .fa-window-maximize { color: skyblue; }
   .fa-th-large {
     color: blue;
   }
@@ -27,9 +31,8 @@ style: |
 <!-- _footer: 'https://github.com/codebytes/dev-containers' -->
 
 ![bg right](img/containers.jpg)
-# Dev Containers
-
-A VS Code superpower
+# Working with Dev Containers
+### ![w:60px](./img/portrait.png) Chris Ayers
 
 ---
 
@@ -64,7 +67,7 @@ A VS Code superpower
   - Mac - Docker Desktop 2.0+
   - Linux - Docker CE/EE 18.06+ / Docker Compose 1.21+
     - (Ubuntu snap not supported)
-- VSCode - Remote - Containers Extension
+- VSCode - Dev Containers Extension
 
 ---
 
@@ -142,7 +145,8 @@ From the Command Pallet
 
 ## Links
 
-- [https://docs.microsoft.com/en-us/events/learntv/learnlive-iac-and-bicep/](https://docs.microsoft.com/en-us/events/learntv/learnlive-iac-and-bicep/)
+- [Dev Containers Tutorial](https://code.visualstudio.com/docs/devcontainers/tutorial)
+- [Beginner's Series to Dev Containers](https://learn.microsoft.com/en-us/shows/beginners-series-to-dev-containers/)
 - [https://github.com/codebytes](https://github.com/codebytes)
 
 </div>
