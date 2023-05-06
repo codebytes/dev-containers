@@ -16,8 +16,6 @@
 			"extensions": [
 				"yzhang.markdown-all-in-one",
 				"streetsidesoftware.code-spell-checker",
-				"DavidAnson.vscode-markdownlint",
-				"bierner.github-markdown-preview",
 				"marp-team.marp-vscode"
 			]
 		}
