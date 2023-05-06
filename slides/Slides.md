@@ -128,6 +128,34 @@ From the Command Pallet
 
 ---
 
+# Templates
+Full List: [https://containers.dev/templates](https://containers.dev/templates)
+
+- Base (Alpine, Debian, Ubuntu)
+- Language Based (C#, C++, Java, Go, Node, Python, Rust, Ruby, PHP)
+- Tool Focused (Markdown, Kubernetes, Docker, Jekyll)
+
+
+---
+
+# Features
+Full list here: [https://containers.dev/features](https://containers.dev/features)
+
+- CLIs (azure, gh, gcp, aws)
+- Tools (Terraform, kubernetes...)
+- Runtimes (Node, Python, Go, Java, .NET, PHP, Ruby, Rust, C/C++, C#)
+
+---
+
+# Customizations
+
+- Extensions
+- Settings
+- Startup Tasks
+- Networking
+
+---
+
 # DEMO TIME
 ![bg right 70%](img/connected-to-dev-container.png)
 
@@ -145,6 +173,8 @@ From the Command Pallet
 
 ## Links
 
+- [Dev Container Templates](https://containers.dev/templates)
+- [Dev Container Features](https://containers.dev/features)
 - [Dev Containers Tutorial](https://code.visualstudio.com/docs/devcontainers/tutorial)
 - [Beginner's Series to Dev Containers](https://learn.microsoft.com/en-us/shows/beginners-series-to-dev-containers/)
 - [https://github.com/codebytes](https://github.com/codebytes)
