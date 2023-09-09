@@ -25,7 +25,7 @@ style: |
     color: orange
   }
 
-  @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'
+  @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'
 
 ---
 <!-- _footer: 'https://github.com/codebytes/dev-containers' -->
@@ -33,6 +33,10 @@ style: |
 ![bg right](img/containers.jpg)
 # Working with Dev Containers
 ### ![w:60px](./img/portrait.png) Chris Ayers
+
+---
+
+![bg](img/atl-dev-con-sponsors.png)
 
 ---
 
