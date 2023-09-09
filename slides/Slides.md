@@ -36,10 +36,6 @@ style: |
 
 ---
 
-![bg](img/atl-dev-con-sponsors.png)
-
----
-
 ![bg left:40%](./img/portrait.png)
 
 ## Chris Ayers
