@@ -58,6 +58,12 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 ---
 
+# Inner and Outer Loops
+
+![fit](img/inner-loop.png)
+
+---
+
 # How Dev Containers Work
 
 ![Dev Containers](img/architecture-containers.png)
