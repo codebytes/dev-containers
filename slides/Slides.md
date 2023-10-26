@@ -3,6 +3,24 @@ marp: true
 theme: custom-default
 footer: '@Chris_L_Ayers - https://chris-ayers.com'
 ---
+
+<!-- 
+_footer: 'https://github.com/codebytes/dev-containers' 
+_footercolor: white
+_color: white
+-->
+
+![bg](img/Slide1.PNG)
+
+<div style="padding-left:400px; font-size:40px">
+
+# Working with Dev Containers
+### Chris Ayers, Microsoft
+
+</div>
+
+---
+
 <!-- _footer: 'https://github.com/codebytes/dev-containers' -->
 
 ![bg right](img/containers.jpg)
@@ -24,6 +42,8 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 ---
 
+![bg](img/Slide3.PNG)
+
 # Agenda
 
 - Prerequisites
@@ -33,6 +53,8 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 - How to build a Dev Containers?
   
 ---
+
+![bg](img/Slide3.PNG)
 
 # Prerequisites
 
@@ -46,9 +68,13 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 ---
 
+![bg](img/Slide3.PNG)
+
 # What are Dev Containers?
 
 ---
+
+![bg](img/Slide3.PNG)
 
 # Dev Containers are:
 
@@ -58,17 +84,7 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 ---
 
-# Inner and Outer Loops
-
-![fit](img/inner-loop.png)
-
----
-
-# How Dev Containers Work
-
-![Dev Containers](img/architecture-containers.png)
-
----
+![bg](img/Slide3.PNG)
 
 <div class="columns">
 <div>
@@ -89,6 +105,18 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 ---
 
+# Inner and Outer Loops
+
+![fit](img/inner-loop.png)
+
+---
+
+# How Dev Containers Work
+
+![Dev Containers](img/architecture-containers.png)
+
+---
+
 # How do you build a Dev Container?
 
 From the Command Pallet
@@ -103,12 +131,6 @@ From the Command Pallet
 
 ---
 
-# How Do I Configure it?
-
-![files](img/config-file.png)
-
----
-
 # Templates
 Full List: [https://containers.dev/templates](https://containers.dev/templates)
 
@@ -116,6 +138,11 @@ Full List: [https://containers.dev/templates](https://containers.dev/templates)
 - Language Based (C#, C++, Java, Go, Node, Python, Rust, Ruby, PHP)
 - Tool Focused (Markdown, Kubernetes, Docker, Jekyll)
 
+---
+
+# How Do I Configure it?
+
+![files](img/config-file.png)
 
 ---
 
@@ -128,12 +155,25 @@ Full list here: [https://containers.dev/features](https://containers.dev/feature
 
 ---
 
+![bg](img/Slide3.PNG)
+
 # Customizations
 
 - Extensions
 - Settings
 - Startup Tasks
 - Networking
+
+---
+
+![bg](img/Slide3.PNG)
+
+# GitHub Codespaces
+
+- Don't need to worry about Docker Desktop
+- VSCode, IntelliJ, Browser
+- 2 core machines up to 32 core machines
+- Default universal DevContainers
 
 ---
 
@@ -146,6 +186,9 @@ Full list here: [https://containers.dev/features](https://containers.dev/feature
 
 
 ---
+
+
+![bg](img/Slide3.PNG)
 
 # Resources 
 
