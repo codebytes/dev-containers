@@ -4,23 +4,6 @@ theme: custom-default
 footer: '@Chris_L_Ayers - https://chris-ayers.com'
 ---
 
-<!-- 
-_footer: 'https://github.com/codebytes/dev-containers' 
-_footercolor: white
-_color: white
--->
-
-![bg](img/Slide1.PNG)
-
-<div style="padding-left:400px; font-size:40px">
-
-# Working with Dev Containers
-### Chris Ayers, Microsoft
-
-</div>
-
----
-
 <!-- _footer: 'https://github.com/codebytes/dev-containers' -->
 
 ![bg right](img/containers.jpg)
@@ -42,8 +25,6 @@ _color: white
 
 ---
 
-![bg](img/Slide3.PNG)
-
 # Agenda
 
 - Prerequisites
@@ -53,8 +34,6 @@ _color: white
 - How to build a Dev Containers?
   
 ---
-
-![bg](img/Slide3.PNG)
 
 # Prerequisites
 
@@ -68,13 +47,9 @@ _color: white
 
 ---
 
-![bg](img/Slide3.PNG)
-
 # What are Dev Containers?
 
 ---
-
-![bg](img/Slide3.PNG)
 
 # Dev Containers are:
 
@@ -83,8 +58,6 @@ _color: white
 - Places to run Apps, Tools, or Runtimes needed for a project or codebase
 
 ---
-
-![bg](img/Slide3.PNG)
 
 <div class="columns">
 <div>
@@ -155,8 +128,6 @@ Full list here: [https://containers.dev/features](https://containers.dev/feature
 
 ---
 
-![bg](img/Slide3.PNG)
-
 # Customizations
 
 - Extensions
@@ -165,8 +136,6 @@ Full list here: [https://containers.dev/features](https://containers.dev/feature
 - Networking
 
 ---
-
-![bg](img/Slide3.PNG)
 
 # GitHub Codespaces
 
@@ -186,9 +155,6 @@ Full list here: [https://containers.dev/features](https://containers.dev/feature
 
 
 ---
-
-
-![bg](img/Slide3.PNG)
 
 # Resources 
 
