@@ -94,7 +94,7 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 From the Command Pallet
 
- ![Add Dev Container files](./img/add-dev-containers-config.png)
+![Add Dev Container files](./img/add-dev-containers-config.png)
 
 ---
 
@@ -119,21 +119,22 @@ Full List: [https://containers.dev/templates](https://containers.dev/templates)
 
 ---
 
+# Customizations
+
+- Features
+- Extensions
+- Settings
+- Startup Tasks
+- Networking
+
+---
+
 # Features
 Full list here: [https://containers.dev/features](https://containers.dev/features)
 
 - CLIs (azure, gh, gcp, aws)
 - Tools (Terraform, kubernetes...)
 - Runtimes (Node, Python, Go, Java, .NET, PHP, Ruby, Rust, C/C++, C#)
-
----
-
-# Customizations
-
-- Extensions
-- Settings
-- Startup Tasks
-- Networking
 
 ---
 
