@@ -7,7 +7,7 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 <!-- _footer: 'https://github.com/codebytes/dev-containers' -->
 
 ![bg right](img/containers.jpg)
-# Working with Dev Containers
+# The Power of Dev Containers and GitHub Codespaces
 ### ![w:60px](./img/portrait.png) Chris Ayers
 
 ---
