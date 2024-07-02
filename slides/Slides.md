@@ -154,7 +154,7 @@ Full list here: [https://containers.dev/features](https://containers.dev/feature
 - VSCode, IntelliJ, Browser
 - 2 core machines up to 32 core machines
 - Default universal DevContainers
-- 
+- Codespaces only offers Linux as the OS and x86_64 as the Architecture
 
 ---
 
