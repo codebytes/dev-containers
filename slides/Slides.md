@@ -37,13 +37,23 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 # Prerequisites
 
-- VS Code
+<div class="columns">
+<div>
+
+## DevContainers
+- VSCode with Dev Containers Extension
 - Docker
-  - Windows - Docker Desktop 2.0+ / WSL2
-  - Mac - Docker Desktop 2.0+
-  - Linux - Docker CE/EE 18.06+ / Docker Compose 1.21+
-    - (Ubuntu snap not supported)
-- VSCode - Dev Containers Extension
+  - Docker Desktop 2+ - Windows/Mac
+  - Linux - Docker CE/EE / Docker Compose 1.21+ - Not
+
+</div>
+<div>
+
+## GitHub Codespaces
+- GitHub Account
+- GitHub Codespaces
+
+</div>
 
 ---
 
@@ -144,6 +154,17 @@ Full list here: [https://containers.dev/features](https://containers.dev/feature
 - VSCode, IntelliJ, Browser
 - 2 core machines up to 32 core machines
 - Default universal DevContainers
+- 
+
+---
+
+# GitHub Codespaces
+
+<style scoped>
+p { text-align: center; }
+</style>
+
+![w:750px](img/codespaces.png)
 
 ---
 
