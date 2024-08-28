@@ -1,6 +1,6 @@
 # Dev Containers
 
-This repository contains the slide deck and resources for the presentation "Dev Containers: A VS Code Superpower" by Chris Ayers.
+This repository contains the slide deck and resources for the presentation "The Power of Dev Containers and GitHub Codespaces" by [Chris Ayers](https://github.com/codebytes).
 
 ## Overview
 Dev Containers allow developers to create a consistent development environment using Docker and Visual Studio Code. This repository provides resources, documentation, and sample repositories to help you get started with Dev Containers.
