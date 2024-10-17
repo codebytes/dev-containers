@@ -199,6 +199,14 @@ p { text-align: center; }
 
 ---
 
+# GitHub Codespace templates
+
+[https://github.com/codespaces/templates](https://github.com/codespaces/templates)
+
+![bg right:60% width:95%](img/github-codespace-templates.png)
+
+---
+
 # DEMO TIME
 
 ![bg right 70%](img/connected-to-dev-container.png)
