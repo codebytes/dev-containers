@@ -4,21 +4,24 @@ theme: custom-default
 footer: '@Chris_L_Ayers - https://chris-ayers.com'
 ---
 
-<!-- _footer: 'https://github.com/codebytes/dev-containers' -->
+# The Power of Dev Containers and GitHub Codespaces
+
+## ![w:60px](./img/portrait.png) Chris Ayers
 
 ![bg right](img/containers.jpg)
-# The Power of Dev Containers and GitHub Codespaces
-### ![w:60px](./img/portrait.png) Chris Ayers
+
+<!-- _footer: 'https://github.com/codebytes/dev-containers' -->
 
 ---
 
 ![bg left:40%](./img/portrait.png)
 
 ## Chris Ayers
+
 ### Senior Customer Engineer<br>Microsoft
 
 <i class="fa-brands fa-twitter"></i> Twitter: @Chris\_L\_Ayers
-<i class="fa-brands fa-mastodon"></i> Mastodon: @Chrisayers@hachyderm.io
+<i class="fa-brands fa-mastodon"></i> Mastodon: [@Chrisayers@hachyderm.io](https://hachyderm.io/@Chrisayers)
 <i class="fa-brands fa-linkedin"></i> LinkedIn: - [chris\-l\-ayers](https://linkedin.com/in/chris-l-ayers/)
 <i class="fa fa-window-maximize"></i> Blog: [https://chris-ayers\.com/](https://chris-ayers.com/)
 <i class="fa-brands fa-github"></i> GitHub: [Codebytes](https://github.com/codebytes)
@@ -37,19 +40,31 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 # Prerequisites
 
-<div class="columns">
+<div class="columns3">
 <div>
 
 ## DevContainers
-- VSCode with Dev Containers Extension
-- Docker
-  - Docker Desktop 2+ - Windows/Mac
-  - Linux - Docker CE/EE / Docker Compose 1.21+ - Not
+
+- VSCode
+  - Dev Containers Extension
+  - GitHub Codespaces Extension 
+- IntelliJ IDEA
+
+</div>
+
+<div>
+
+## Docker
+
+- Docker installed locally
+- Docker installed on a remote environment
+- Other Docker compliant CLIs, installed locally or remotely
 
 </div>
 <div>
 
-## GitHub Codespaces
+## GitHub Codespaces Requirement
+
 - GitHub Account
 - GitHub Codespaces
 
@@ -59,13 +74,10 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 # What are Dev Containers?
 
----
-
-# Dev Containers are:
-
 - Environments that run in a container
 - Containers that let you open or mount any folder and still use VS Code UI and tooling
 - Places to run Apps, Tools, or Runtimes needed for a project or codebase
+- [Containers.dev](https://containers.dev/) - An open specification for enriching containers with development specific content and settings.
 
 ---
 
@@ -78,7 +90,7 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 <div>
 
 - <i class="fa fa-users"></i> Onboard new People
-- <i class="fa fa-wrench"></i> Use consistent tooling 
+- <i class="fa fa-wrench"></i> Use consistent tooling
 - <i class="fa fa-file-code-o"></i> Use consistent versions
 - <i class="fa fa-warning"></i> Reduce System Conflicts
 - <i class="fa fa-tasks"></i> Perform Startup Tasks
@@ -100,6 +112,23 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 ---
 
+# Where do Dev Containers Live?
+
+![devcontainer folder](img/dev-container-folder.png)
+
+---
+
+# Multiple Dev Container Configurations
+
+Tooling supports multiple devcontainers.
+Each one should be in its own subdirectory at:
+
+.devcontainer/SUBDIRECTORY/devcontainer.json.
+
+![bg right fit](img/multiple-devcontainers.png)
+
+---
+
 # How do you build a Dev Container?
 
 From the Command Pallet
@@ -115,17 +144,12 @@ From the Command Pallet
 ---
 
 # Templates
+
 Full List: [https://containers.dev/templates](https://containers.dev/templates)
 
 - Base (Alpine, Debian, Ubuntu)
 - Language Based (C#, C++, Java, Go, Node, Python, Rust, Ruby, PHP)
 - Tool Focused (Markdown, Kubernetes, Docker, Jekyll)
-
----
-
-# How Do I Configure it?
-
-![files](img/config-file.png)
 
 ---
 
@@ -140,6 +164,7 @@ Full List: [https://containers.dev/templates](https://containers.dev/templates)
 ---
 
 # Features
+
 Full list here: [https://containers.dev/features](https://containers.dev/features)
 
 - CLIs (azure, gh, gcp, aws)
@@ -148,17 +173,23 @@ Full list here: [https://containers.dev/features](https://containers.dev/feature
 
 ---
 
+# Configuration Loop
+
+![Configuration Loop](img/configuration-loop.png)
+
+---
+
 # GitHub Codespaces
 
 - Don't need to worry about Docker Desktop
 - VSCode, IntelliJ, Browser
-- 2 core machines up to 32 core machines
+- From 2 cores up to 16 cores w/ 64GB of RAM
 - Default universal DevContainers
 - Codespaces only offers Linux as the OS and x86_64 as the Architecture
 
 ---
 
-# GitHub Codespaces
+# GitHub Codespaces Architecture
 
 <style scoped>
 p { text-align: center; }
@@ -169,16 +200,16 @@ p { text-align: center; }
 ---
 
 # DEMO TIME
+
 ![bg right 70%](img/connected-to-dev-container.png)
 
 ---
 
 ![bg](img/questions.jpg)
 
-
 ---
 
-# Resources 
+# Resources
 
 <div class="columns">
 <div>
@@ -194,10 +225,10 @@ p { text-align: center; }
 </div>
 <div>
 
-## Chris Ayers 
+## Chris Ayers
 
 <i class="fa-brands fa-twitter"></i> Twitter: @Chris\_L\_Ayers
-<i class="fa-brands fa-mastodon"></i> Mastodon: @Chrisayers@hachyderm.io
+<i class="fa-brands fa-mastodon"></i> Mastodon: [@Chrisayers@hachyderm.io](https://hachyderm.io/@Chrisayers)
 <i class="fa-brands fa-linkedin"></i> LinkedIn: - [chris\-l\-ayers](https://linkedin.com/in/chris-l-ayers/)
 <i class="fa fa-window-maximize"></i> Blog: [https://chris-ayers\.com/](https://chris-ayers.com/)
 <i class="fa-brands fa-github"></i> GitHub: [Codebytes](https://github.com/codebytes)
