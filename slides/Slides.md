@@ -102,7 +102,7 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 # Inner and Outer Loops
 
-![fit](img/inner-loop.png)
+![w:900px](img/inner-loop.png)
 
 ---
 
@@ -133,7 +133,7 @@ Each one should be in its own subdirectory at:
 
 From the Command Pallet
 
-![Add Dev Container files](./img/add-dev-containers-config.png)
+![Add Dev Container files w:950px](./img/add-dev-containers-config.png)
 
 ---
 
