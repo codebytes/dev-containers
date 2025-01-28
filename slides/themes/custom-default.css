@@ -19,22 +19,6 @@
   vertical-align: middle
 }
 
-.fa-twitter {
-  color: aqua;
-}
-
-.fa-mastodon {
-  color: purple;
-}
-
-.fa-linkedin {
-  color: blue;
-}
-
-.fa-window-maximize {
-  color: skyblue;
-}
-
 .fa-th-large {
   color: blue;
 }
@@ -51,5 +35,15 @@ img[alt~="center"] {
   display: block;
   margin: 0 auto;
 }
+.fa-twitter { color: aqua; }
+.fa-mastodon { color: purple; }
+.fa-linkedin { color: blue; }
+.fa-window-maximize { color: skyblue; }
+.fa-bluesky { color: skyblue; }
 
-@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'
+svg[id^="mermaid-"] { 
+  max-width: 960px; 
+  max-height: 600px; 
+}
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css'
