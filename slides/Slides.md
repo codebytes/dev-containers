@@ -6,6 +6,8 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 # The Power of Dev Containers and GitHub Codespaces
 
+### From Local Dev to Cloud Ready: Portable Environments with Dev Containers & Codespaces
+
 ## ![w:60px](./img/portrait.png) Chris Ayers
 
 ![bg right](img/containers.jpg)
@@ -32,10 +34,13 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 # Agenda
 
 - Prerequisites
-- What are Dev Containers?
-- How Dev Containers Work?
-- Why use Dev Containers?
-- How to build a Dev Containers?
+- What Are Dev Containers?
+- Why Use Dev Containers?
+- How Dev Containers Work
+- How to Build a Dev Container
+- Templates, Features, Customization
+- GitHub Codespaces
+- Demo
   
 ---
 
@@ -58,7 +63,7 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 ## Docker
 
 - Docker installed locally
-- Docker installed on a remote environment
+- Remote Docker host (optional for remote container execution)
 - Other Docker compliant CLIs, installed locally or remotely
 
 </div>
@@ -95,11 +100,16 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 - <i class="fa fa-file-code-o"></i> Use consistent versions
 - <i class="fa fa-warning"></i> Reduce System Conflicts
 - <i class="fa fa-tasks"></i> Perform Startup Tasks
+<i class="fa fa-shield"></i> Improve security via isolation
 
 </div>
 </div>
 
 ---
+
+<style scoped>
+p { text-align: center; }
+</style>
 
 # Inner and Outer Loops
 
@@ -107,9 +117,15 @@ footer: '@Chris_L_Ayers - https://chris-ayers.com'
 
 ---
 
+<style scoped>
+p { text-align: center; }
+</style>
+
 # How Dev Containers Work
 
 ![Dev Containers](img/architecture-containers.png)
+
+Your editor talks to a containerized environment with all the dependencies, so your local system stays clean.
 
 ---
 
