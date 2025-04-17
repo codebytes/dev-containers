@@ -172,11 +172,11 @@ Full List: [https://containers.dev/templates](https://containers.dev/templates)
 
 # Customizations
 
-- Features
-- Extensions
-- Settings
-- Startup Tasks
-- Networking
+- Features - Install tools into the container image.
+- Extensions - Install extensions for the editor inside the container.
+- Settings - Configure the editor settings inside the container.
+- Startup Tasks - Run commands when the container starts.
+- Networking - Port Forwarding - Expose ports to the host.
 
 ---
 
@@ -203,7 +203,7 @@ Full list here: [https://containers.dev/features](https://containers.dev/feature
 - From 2 cores up to 16 cores w/ 64GB of RAM
 - Default universal DevContainers
 - Codespaces only offers Linux as the OS and x86_64 as the Architecture
-
+- Spin up secure, disposable environments for PR reviews, testing, or onboarding.
 ---
 
 # GitHub Codespaces Architecture
