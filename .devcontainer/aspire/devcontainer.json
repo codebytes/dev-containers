@@ -1,0 +1,31 @@
+{
+  "name": ".NET Aspire",
+  // Base .NET 9 image. Alternatively a Dockerfile/compose could be used.
+  "image": "mcr.microsoft.com/devcontainers/dotnet:9.0-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/powershell:1": {}
+  },
+
+  // Install Aspire tooling & workloads early in create lifecycle.
+  // (Previous postCreateCommand replaced by onCreateCommand as requested.)
+  // Former: "postCreateCommand": "dotnet workload install aspire && dotnet restore <project>"
+  "onCreateCommand": "curl -sSL https://aspire.dev/install.sh | bash",
+  // Trust HTTPS dev certs on each container start (may be a no-op in headless Linux but harmless).
+  "postStartCommand": "dotnet dev-certs https --trust || true",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csdevkit",
+        "GitHub.copilot-chat",
+        "GitHub.copilot"
+      ]
+    }
+  },
+  "forwardPorts": [5087],
+  "portsAttributes": {
+    "5087": { "label": "DevContainers.Aspire.Web", "onAutoForward": "openBrowser" }
+  },
+  "remoteUser": "vscode"
+}
