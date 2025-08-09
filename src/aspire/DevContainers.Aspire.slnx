@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="DevContainers.Aspire.ApiService/DevContainers.Aspire.ApiService.csproj" />
+  <Project Path="DevContainers.Aspire.AppHost/DevContainers.Aspire.AppHost.csproj" />
+  <Project Path="DevContainers.Aspire.ServiceDefaults/DevContainers.Aspire.ServiceDefaults.csproj" />
+  <Project Path="DevContainers.Aspire.Web/DevContainers.Aspire.Web.csproj" />
+</Solution>
