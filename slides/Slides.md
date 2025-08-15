@@ -365,16 +365,17 @@ jobs:
 
 ---
 
-# Multi-Service (Compose) Pattern
+# Tips & Tricks: Git Line Endings (Windows/WSL)
 
-- docker-compose.yml defines api, db, cache, worker services
-- devcontainer.json references primary service: "service": "api"
-- Shared network: service hostnames = service names (db:5432)
-- volumes: persist database state or ephemeral for clean tests
-- Add Features only to dev container service; others use minimal images
-- Tip: Use HEALTHCHECK for dependent service readiness (faster stabilize)
+On Windows/WSL, you may see many modified files due to line ending differences between host and container.
 
-Flow: Editor -> api container (extensions) -> other services via internal network.
+- Add a `.gitattributes` file to enforce consistent line endings:
+
+```gitattributes
+* text=auto eol=lf
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+```
 
 ---
 
