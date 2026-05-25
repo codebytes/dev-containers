@@ -3,7 +3,7 @@
   // Base .NET 9 image. Alternatively a Dockerfile/compose could be used.
   "image": "mcr.microsoft.com/devcontainers/dotnet:9.0-bookworm",
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:3": {},
     "ghcr.io/devcontainers/features/powershell:2": {}
   },
 
