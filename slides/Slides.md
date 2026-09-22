@@ -20,7 +20,7 @@ theme: custom-default
 
 ## Chris Ayers
 
-### Principal Software Engineer<br>Azure CXP AzRel<br>Microsoft
+### Principal Software Engineer<br>Azure EngOps AzRel<br>Microsoft
 
 <i class="fa-brands fa-bluesky"></i> BlueSky: [@chris-ayers.com](https://bsky.app/profile/chris-ayers.com)
 <i class="fa-brands fa-linkedin"></i> LinkedIn: - [chris\-l\-ayers](https://linkedin.com/in/chris-l-ayers/)
@@ -33,15 +33,25 @@ theme: custom-default
 
 # Agenda
 
+<div class="columns">
+<div>
+
 - Why Dev Containers
 - What They Are & How They Work
 - Quick Start & Building
 - Templates vs Features vs Customizations
 - Core Concepts (Image vs Feature vs Template)
+
+</div>
+<div>
+
 - GitHub Codespaces
 - Demo
 - Advanced: Security, Multi-Service, Prebuilds, Performance & Cost, Debug & Ports, Troubleshooting, Limits
 - Resources & Q&A
+
+</div>
+</div>
 
 ---
 
@@ -77,7 +87,7 @@ theme: custom-default
 
 Your editor talks to a containerized environment with all dependencies, keeping your local system clean.
 
-![Dev Containers center](img/architecture-containers.png)
+![Dev Containers center w:880px](img/architecture-containers.png)
 
 ---
 
@@ -349,6 +359,13 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+```
+
+---
+
+# Prebuild CI Workflow (continued)
+
+```yaml
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -381,7 +398,7 @@ On Windows/WSL, you may see many modified files due to line ending differences b
 
 # Troubleshooting & Recovery
 
-![center fit](img/configuration-loop.png)
+![center fit w:1040px](img/configuration-loop.png)
 
 ---
 
