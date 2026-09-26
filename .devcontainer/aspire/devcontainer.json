@@ -1,8 +1,9 @@
 {
   "name": ".NET Aspire",
-  // Base .NET 9 image. Alternatively a Dockerfile/compose could be used.
-  "image": "mcr.microsoft.com/devcontainers/dotnet:9.0-bookworm",
+  // Current stable .NET SDK is installed by the versioned feature below.
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
   "features": {
+    "ghcr.io/devcontainers/features/dotnet:2": { "version": "10.0.401" },
     "ghcr.io/devcontainers/features/docker-in-docker:4": {},
     "ghcr.io/devcontainers/features/powershell:2": {}
   },
