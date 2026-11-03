@@ -6,6 +6,14 @@ Create consistent development environments with Dev Containers and take them fro
 
 [View HTML slides](https://chris-ayers.com/dev-containers/) | [Download PDF](https://chris-ayers.com/dev-containers/Slides.pdf)
 
+## Recordings
+
+- [Stir Trek 2025](https://www.youtube.com/watch?v=ryF41Mqpcwc)
+- [NDC Porto 2024](https://www.youtube.com/watch?v=wzIhoopguPY)
+- [Copenhagen Developers Festival 2024](https://www.youtube.com/watch?v=WiJEHAyMiB0)
+- [Devoxx Greece 2023 — Working with Dev Containers](https://www.youtube.com/watch?v=HV7LJ_LUZ5A)
+- [Tampa Bay DevOps — Dev Containers in VS Code](https://www.youtube.com/watch?v=NUh66aVnE94)
+
 ## Resources
 
 - [Slide source](slides/Slides.md)
