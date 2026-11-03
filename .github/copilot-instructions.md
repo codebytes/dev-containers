@@ -1,85 +1,71 @@
+<!-- Keep in sync with AGENTS.md at the repository root. -->
 
-# Copilot Project Instructions
+# Agent instructions: The Power of Dev Containers and GitHub Codespaces
 
-This repository contains two main areas:
+This repository holds the slides and demos for Chris Ayers' talk **The Power of Dev Containers and GitHub Codespaces**. The deck is published to <https://chris-ayers.com/dev-containers/>.
 
-1. **Marp Slide Deck & Static Site** (for "The Power of Dev Containers and GitHub Codespaces")
-2. **.NET Aspire Sample Solution** (under `src/aspire/`)
+## Repository layout
 
----
+- `slides/`: Marp deck (`Slides.md` is the single source of truth), images in `slides/img/`, themes in `slides/themes/`.
+- `.devcontainer/<name>/devcontainer.json`: one config per scenario: `slides` (authoring), `codespaces` (lightweight demo), `aspire`, `multicontainer-node`, `multicontainer-python`.
+- `src/aspire/`: minimal Aspire sample. `DevContainers.Aspire.AppHost/` orchestrates `DevContainers.Aspire.Web/` (plus `ServiceDefaults`). `src/go`, `src/node`, `src/python` are small per-language samples.
+- `docs/resources.md` (links) and `docs/runtime-upgrade.md` (how to bump SDK/runtime versions).
 
-## 1. Marp Slide Deck & Static Site
+## Slides
 
-- **Source:** `slides/Slides.md` (single source of truth; always edit here)
-- **Assets:** `slides/img/` (images), `slides/themes/` (custom Marp CSS themes)
-- **Dev Containers:** `.devcontainer/slides/devcontainer.json` (authoring), `.devcontainer/codespaces/devcontainer.json` (lightweight demo)
-- **Build/Deploy:** `.github/workflows/marp-pages.yml` (renders Slides.md to `build/index.html` for GitHub Pages)
+- Write the deck in Markdown with [Marp](https://marp.app/). `slides/Slides.md` is the source; `build/` is generated output and is never edited or committed.
+- Keep the frontmatter at the top of the deck:
 
-**Editing/Rendering:**
-- Retain the Marp front-matter block at the top of Slides.md
-- Use Marp directives (theme, footer, bg, columns) for layout
-- Add images to `slides/img/` and reference as `img/name.png`
-- Prefer custom theme files over inline styles
+  ```yaml
+  ---
+  marp: true
+  theme: custom-default
+  ---
+  ```
 
-**Multi-deck:**
-- Add new decks as `slides/AnotherTalk.md` and update workflow to render
+- Store themes in `slides/themes/` and images and diagram sources in `slides/img/`. Prefer theme classes and CSS variables over inline styles.
+- Write speaker notes as HTML comments (`<!-- -->`).
+- Render locally with the Marp CLI version the Pages workflow uses (v4.5.0):
 
-**Local Preview:**
+  ```bash
+  npx @marp-team/marp-cli@4.5.0 --theme-set slides/themes --html -o build/index.html -- slides/Slides.md
+  npx @marp-team/marp-cli@4.5.0 --theme-set slides/themes --html --pdf --allow-local-files -o build/Slides.pdf -- slides/Slides.md
+  ```
+
+- `.github/workflows/marp-pages.yml` builds the HTML deck and `Slides.pdf` and publishes both to GitHub Pages. If you add slide assets outside `slides/img/` and `slides/themes/`, add them to the workflow's copy step.
+
+## Shared skills
+
+Use the shared skills from [codebytes/skills](https://github.com/codebytes/skills) (for Copilot CLI: `copilot plugin install https://github.com/codebytes/skills`). Don't copy their instructions or scripts into this repo.
+
+| Task | Skill |
+| --- | --- |
+| Write or revise slides, notes, order, or layouts | `marp-authoring` |
+| Charts, Mermaid diagrams, or other visuals | `marp-visuals` |
+| Editable `.drawio.svg` diagrams (stored in `slides/img/`) | `drawio-diagrams` |
+| Check overflow, clipping, and HTML/PDF parity before presenting or publishing | `marp-slide-review` |
+
+## Build and run
+
 ```bash
-docker run --rm -v "$PWD:/work" -w /work ghcr.io/marp-team/marp-cli/marp-cli --theme-set slides/themes -o build/index.html --html slides/Slides.md
+cd src/aspire && dotnet restore && dotnet run --project DevContainers.Aspire.AppHost/DevContainers.Aspire.AppHost.csproj
+npx --yes @devcontainers/cli up --workspace-folder . --config .devcontainer/aspire/devcontainer.json   # what devcontainer-validation.yml runs
 ```
 
----
+## Talk-specific rules
 
-## 2. .NET Aspire Sample Solution (`src/aspire/`)
+- Add a new dev container as `.devcontainer/<name>/devcontainer.json`, matching the existing pattern.
+- The Aspire config uses Docker-in-Docker by default (CI and Codespaces). Docker-outside-of-Docker is faster but shares the host socket; see `src/aspire/README.md` for the tradeoffs.
+- Placeholder secrets in dev container configs are for demos only; never commit real ones.
+- Keep backend code inside `src/` and keep changes tightly scoped to either content or infrastructure.
 
-**Architecture:**
-- `DevContainers.Aspire.AppHost/`: Orchestrator using .NET Aspire hosting model; launches and manages the web project and any future services
-- `DevContainers.Aspire.Web/`: Minimal ASP.NET Core API (expandable)
-- `DevContainers.Aspire.ServiceDefaults/`: Shared service defaults (if present)
+## README
 
-**Build/Run Workflow:**
-- Restore all projects: `dotnet restore`
-- Run orchestrator: `dotnet run --project DevContainers.Aspire.AppHost/DevContainers.Aspire.AppHost.csproj`
-- The AppHost will launch the Web project and any additional services
-- Default web endpoint: http://localhost:5087 (see console output for port)
+- Keep the README sections in this order: Slides, Recordings, Resources, Contact.
+- When a new recording of the talk is published, add it at the top of `## Recordings` as `- [Event Year](https://www.youtube.com/watch?v=VIDEO_ID)`. When the video's title differs from the talk's, add an em dash and the recorded title after the event. Keep the list newest first.
+- The talk also appears on <https://chris-ayers.com/speaking/> (source: `content/speaking.md` in [codebytes/codebytes.github.io](https://github.com/codebytes/codebytes.github.io)); new events and recordings belong there too.
 
-**Dev Container Usage:**
-- Use `.devcontainer/aspire/devcontainer.json` for Aspire development
-- Key tasks:
-  - `onCreateCommand`: Installs Aspire tooling/workloads
-  - `postStartCommand`: Trusts HTTPS dev certs (safe on Linux)
-  - Installs .NET Dev Kit, Copilot, Copilot Chat extensions
-- To start: open `src/aspire/` in VS Code, run "Dev Containers: Reopen in Container", select aspire config
+## General
 
-**Docker Strategies:**
-- Docker-in-Docker (DinD): Full isolation, used by default for CI/Codespaces
-- Docker-on-Docker (DoD): Faster, shares host Docker socket; enable by mounting `/var/run/docker.sock` in devcontainer config
-- See `src/aspire/README.md` for tradeoffs and details
-
-**Extending:**
-- Add new services (e.g., databases) via AppHost project
-- Extend the devcontainer image as needed for extra tools
-
-**Patterns/Conventions:**
-- Multiple devcontainer configs under `.devcontainer/` (pattern: `.devcontainer/<name>/devcontainer.json`)
-- All slide content and images are managed in `slides/` (never edit `build/` directly)
-- Aspire solution is intentionally minimal; expand by adding new projects/services under `src/aspire/`
-
----
-
-## General Guidance
-- Keep changes tightly scoped (content vs. infra)
-- Never commit real secrets; placeholder secrets in devcontainer configs are for demo only
-- No backend/server code outside `src/aspire/` unless intentionally expanding scope
-
----
-
-## Key References
-- [Dev Containers Docs](https://code.visualstudio.com/docs/devcontainers/create-dev-container)
-- [Aspire Docs](https://learn.microsoft.com/dotnet/aspire/overview/)
-- [Marp CLI](https://marp.app/)
-
----
-
-Let me know if any section needs elaboration (e.g., multi-deck support, theme authoring, or extending the workflow) and I can refine further.
+- Keep changes scoped to the request; don't reformat unrelated slides or code.
+- Never commit secrets, keys, or connection strings. Demo placeholders must be obviously fake.
