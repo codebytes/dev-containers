@@ -36,7 +36,7 @@ This repository holds the slides and demos for Chris Ayers' talk **The Power of 
 
 ## Shared skills
 
-Use the shared skills from [codebytes/skills](https://github.com/codebytes/skills) (for Copilot CLI: `copilot plugin install https://github.com/codebytes/skills`). Don't copy their instructions or scripts into this repo.
+Use the shared skills from [codebytes/skills](https://github.com/codebytes/skills) (for Copilot CLI: `copilot plugin install https://github.com/codebytes/skills`). Don't copy their instructions or scripts into this repository.
 
 | Task                                                                          | Skill               |
 | ----------------------------------------------------------------------------- | ------------------- |
@@ -55,7 +55,7 @@ npx --yes @devcontainers/cli up --workspace-folder . --config .devcontainer/aspi
 ## Talk-specific rules
 
 - Add a new dev container as `.devcontainer/<name>/devcontainer.json`, matching the existing pattern.
-- The Aspire config uses Docker-in-Docker by default (CI and Codespaces). Docker-outside-of-Docker is faster but shares the host socket; see `src/aspire/README.md` for the tradeoffs.
+- The Aspire config uses Docker-in-Docker by default (CI and Codespaces). Docker-outside-of-Docker is faster but shares the host socket; see `src/aspire/README.md` for the trade-offs.
 - Placeholder secrets in dev container configs are for demos only; never commit real ones.
 - Keep backend code inside `src/` and keep changes tightly scoped to either content or infrastructure.
 
